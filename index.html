@@ -12,11 +12,11 @@
         <label id="name-label" for="name">Name*</label>
             <input id="name" type="text" name="name" required placeholder="Your name">
         <label id="email-label" for="email">Email*</label>
-            <input id="email" type="text" name="email" required placeholder="exemple@email.com">  <!--Validation required-->
+            <input id="email" type="email" name="email" required placeholder="exemple@email.com" min="0" max="9999999999">
         <label id="number-label" for="number">Number<em>(Optional)</em></label>
             <input id="number" type="number" name="number" placeholder="phone number">  <!--Double validation required-->
         <br>
-        <label for="dropdown">Which option best describes your current role?</label>
+        <label for="dropdown">Which option best describes your current role ?</label>
         <select id="dropdown" name="foo">
             <option value="">Select current role</option>
             <option value="student">Student</option>
@@ -26,7 +26,7 @@
             <option value="Other">Other</option>
         </select>
         <br>
-        <p>Do you belive in "no code"?</p>
+        <p>Do you belive in "no code" ?</p>
         <input id="definitely" type="radio" name="noCode" value="definitely">
         <label for="definitely">Definitely</label>
         <input id="maybe" type="radio" name="noCode" value="maybe">
@@ -48,8 +48,8 @@
         <input id="golang" type="checkbox" name="backEnd" value="golang">
         <label for="golang">Golang</label>
         <br>
-        <label for="comment">Add a comment</label>
-        <textarea id="comment" name="comment" rows="5" cols="50">Write your comment here.</textarea>
+        <label for="comment">Describe your background</label>
+        <textarea id="comment" name="comment" rows="5" cols="50">Write here.</textarea>
         <button id="submit" type="submit">Submit</button>
     </form>
 </body>
