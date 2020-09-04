@@ -3,54 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Developer Survey Form</h1>
-    <p id="description">Please, fill out this form to help us to improve our data</p>
-    <form id="survey-form">
-        <label id="name-label" for="name">Name*</label>
-            <input id="name" type="text" name="name" required placeholder="Your name">
-        <label id="email-label" for="email">Email*</label>
-            <input id="email" type="email" name="email" required placeholder="exemple@email.com" min="0" max="9999999999">
-        <label id="number-label" for="number">Number<em>(Optional)</em></label>
-            <input id="number" type="number" name="number" placeholder="phone number">  <!--Double validation required-->
-        <br>
-        <label for="dropdown">Which option best describes your current role ?</label>
-        <select id="dropdown" name="foo">
-            <option value="">Select current role</option>
-            <option value="student">Student</option>
-            <option value="selfTaught">Self-taught</option>
-            <option value="developer">Developer</option>
-            <option value="ITWorker">IT worker</option>
-            <option value="Other">Other</option>
-        </select>
-        <br>
-        <p>Do you belive in "no code" ?</p>
-        <input id="definitely" type="radio" name="noCode" value="definitely">
-        <label for="definitely">Definitely</label>
-        <input id="maybe" type="radio" name="noCode" value="maybe">
-        <label for="maybe">Maybe</label>
-        <input id="notSure" type="radio" name="noCode" value="notSure">
-        <label for="notSure">Not sure</label>
-        <br>
-        <p>Which of these back-end languages do you master ?</p>
-        <input id="ruby" type="checkbox" name="backEnd" value="ruby">
-        <label for="ruby">Ruby</label>
-        <input id="php" type="checkbox" name="backEnd" value="php">
-        <label for="php">PHP</label>
-        <input id="java" type="checkbox" name="backEnd" value="java">
-        <label for="java">Java</label>
-        <input id="python" type="checkbox" name="backEnd" value="python">
-        <label for="python">Python</label>
-        <input id="js" type="checkbox" name="backEnd" value="js">
-        <label for="js">JS</label>
-        <input id="golang" type="checkbox" name="backEnd" value="golang">
-        <label for="golang">Golang</label>
-        <br>
-        <label for="comment">Describe your background</label>
-        <textarea id="comment" name="comment" rows="5" cols="50">Write here.</textarea>
-        <button id="submit" type="submit">Submit</button>
-    </form>
+    <div id="main">
+        <h1 id="title">Developer Survey Form</h1>
+        <p id="description">Please, fill out this form to help us to improve our data.</p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+                <input id="name" class="id-info" type="text" name="name" required placeholder="Your name">
+            <br>
+            <label id="email-label" for="email">Email</label>
+                <input id="email" class="id-info" type="email" name="email" required placeholder="exemple@email.com">
+            <br>
+            <label id="number-label" for="number">Number <em>(Optional)</em></label>
+                <input id="number" class="id-info" type="number" name="number" placeholder="phone number" min="0" max="9999999999">
+            <br>
+            <label for="dropdown">Which option best describes your current role ?</label>
+            <select id="dropdown" name="foo">
+                <option value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="selfTaught">Self-taught</option>
+                <option value="developer">Developer</option>
+                <option value="ITWorker">IT worker</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <p>Do you belive in "no code" ?</p>
+            <div id="container-radio">
+                <label for="definitely">
+                    <input id="definitely" type="radio" name="noCode" value="definitely">
+                Definitely</label>
+                <label for="maybe">
+                    <input id="maybe" type="radio" name="noCode" value="maybe">
+                Maybe</label>
+                <label for="notSure">
+                    <input id="notSure" type="radio" name="noCode" value="notSure">
+                Not sure</label>
+            </div>
+            <p>Which of these back-end languages do you master ?</p>
+            <div id="container-checkbox">
+                <label for="ruby">
+                    <input id="ruby" type="checkbox" name="backEnd" value="ruby">
+                Ruby</label>
+                <label for="php">
+                    <input id="php" type="checkbox" name="backEnd" value="php">
+                PHP</label>
+                <label for="java">
+                    <input id="java" type="checkbox" name="backEnd" value="java">
+                Java</label>
+                <label for="python">
+                    <input id="python" type="checkbox" name="backEnd" value="python">
+                Python</label>
+                <label for="js">
+                    <input id="js" type="checkbox" name="backEnd" value="js">
+                JS</label>
+                <label for="golang">
+                    <input id="golang" type="checkbox" name="backEnd" value="golang">
+                Golang</label>
+            </div>
+            <br>
+            <label for="comment">Describe your background :</label>
+            <textarea id="comment" name="comment" rows="5">Write here.</textarea>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

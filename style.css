@@ -1,0 +1,93 @@
+/*
+#646E78 => Black Coral
+#8D98A7 => Cadet Grey
+#DCCCBB => Almond
+#EAB464 => Sunray
+#A7754D => Cafe Au Lait
+*/
+
+
+body {
+    background: linear-gradient( 
+            rgba(234, 180, 100, 0.75),
+            rgba(234, 180, 100, 0.75)
+        ), /*#EAB464*/
+        url("keyboard.jpg");
+    background-size: cover;
+}
+
+#main {
+    min-width: 160px;
+    max-width: 640px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 + p {
+    text-align: center;
+}
+
+#description {
+    font-style: italic;
+}
+
+form {
+    background-color:rgba(167, 117, 77, 0.75); /*#A7754D*/
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+#container-radio {
+    max-width:300px;
+}
+
+#container-checkbox, #container-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.id-info {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+em {
+    font-size: 0.7em;
+}
+
+select {
+    display: inline-block;
+    width: 30%;
+    min-width: 100px;
+}
+
+[type="checkbox"] {
+    display: table-cell;
+}
+
+[type="checkbox"] label {
+    display: table-cell;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    background-color: #DCCCBB;
+    font-size: 1.1em;
+}
