@@ -43,7 +43,11 @@ form {
 }
 
 #container-radio {
-    max-width:300px;
+    max-width:400px;
+}
+
+.label-no-code {
+    margin-right: 15px;
 }
 
 #container-checkbox, #container-radio {
